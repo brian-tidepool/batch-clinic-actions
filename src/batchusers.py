@@ -4,7 +4,7 @@ import os
 
 runs = int(os.environ.get("INPUT_NUM"))
 prefix = os.environ.get("PREFIX")
-days = os.environ.get("DAYS")
+days = int(os.environ.get("DAYS"))
 
 env_file = os.getenv('GITHUB_ENV')
 

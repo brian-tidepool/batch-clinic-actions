@@ -29,13 +29,17 @@ runs:
     - name: Install Dependencies
       run: pip install -r requirements.txt
       shell: bash
-    - name: Pass Inputs to Shell
+    - name: Pass Inputs num to Shell
       run: |
               echo "INPUT_NUM=${{ inputs.num }}" >> $GITHUB_ENV
       shell: bash
-    - name: Pass Inputs to Shell
+    - name: Pass Inputs prefix to Shell
       run: |
               echo "INPUT_PREFIX=${{ inputs.prefix }}" >> $GITHUB_ENV
+      shell: bash
+    - name: Pass Inputs days to Shell
+      run: |
+              echo "INPUT_PREFIX=${{ inputs.days }}" >> $GITHUB_ENV
       shell: bash
     - name: Upload to a batch of users
       id: upload-batch
