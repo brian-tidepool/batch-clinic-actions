@@ -2,7 +2,7 @@ from healthkit_precise import *
 import os
 
 
-runs = os.environ.get("INPUT_NUM")
+runs = int(os.environ.get("INPUT_NUM"))
 prefix = os.environ.get("PREFIX")
 def random_char(y):
        return ''.join(random.choice(string.ascii_letters) for x in range(y))
