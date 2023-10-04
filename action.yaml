@@ -10,6 +10,10 @@ inputs:
     description: 'Enter an email prefix'
     required: true
     default: "fvn"
+  days:
+    description: 'Enter number of days'
+    required: true
+    default: "30" 
 outputs:
   num_squared:
     description: 'Square of the input'

@@ -17,5 +17,6 @@ jobs:
         with:
           num: 1
           prefix: fvn
-      - name: Print the square
+          days: 1
+      - name: Print the status
         run: echo "${{ steps.get_batch_users.outputs.result }}"
