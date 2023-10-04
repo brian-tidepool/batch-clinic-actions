@@ -39,7 +39,7 @@ runs:
       shell: bash
     - name: Pass Inputs days to Shell
       run: |
-              echo "INPUT_PREFIX=${{ inputs.days }}" >> $GITHUB_ENV
+              echo "INPUT_DAYS=${{ inputs.days }}" >> $GITHUB_ENV
       shell: bash
     - name: Upload to a batch of users
       id: upload-batch

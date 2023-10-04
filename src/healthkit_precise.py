@@ -211,7 +211,7 @@ def run(env,username,days,goal,percent_num):
                     json_list = []
             rsum = sum(ranges)
         if j==((days*24)-1):
-            print(j,[r/rsum for r in ranges ],ranges,len(date_list[0:start[j+1]]), sum(ranges)/len(date_list[0:start[j+1]]))
+            print(username,j,[r/rsum for r in ranges ],ranges,len(date_list[0:start[j+1]]), sum(ranges)/len(date_list[0:start[j+1]]))
         
         
         #time.sleep(60)
