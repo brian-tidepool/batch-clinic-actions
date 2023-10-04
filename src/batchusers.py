@@ -6,7 +6,7 @@ runs = int(os.environ.get("INPUT_NUM"))
 prefix = os.environ.get("INPUT_PREFIX")
 days = int(os.environ.get("INPUT_DAYS"))
 
-env_file = os.getenv('GITHUB_ENV')
+env_file = os.getenv('GITHUB_OUTPUT')
 
 
 def random_char(y):
