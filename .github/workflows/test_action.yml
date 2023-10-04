@@ -19,4 +19,4 @@ jobs:
           prefix: fvn
           days: 1
       - name: Print the status
-        run: echo "${{ steps.get_batch_users.outputs.result }}"
+        run: echo "${{steps.get_batch_users.outputs.result}}"

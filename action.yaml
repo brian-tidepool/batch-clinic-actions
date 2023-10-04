@@ -15,10 +15,10 @@ inputs:
     required: true
     default: "30" 
 outputs:
-  num_squared:
-    description: 'Square of the input'
+  result:
+    description: 'result status'
     # need to specify the extra `value` field for `composite` actions
-    value: ${{ steps.get-square.outputs.num_squared }}
+    value: ${{ steps.upload-batch.outputs.result }}
 runs:
   using: 'composite'
   steps:
